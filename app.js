@@ -19,7 +19,7 @@ var score_1 = document.getElementById("score-1");
 
 //class="player-current-score" бүх тоглогчийн одоогийн оноо
 
-var current_All=document.querySelector(".player-current-score");
+var current_All = document.querySelector(".player-current-score");
 
 // id="current-0" нэгдүгээр тоглогчийн одоогийн оноо
 
@@ -36,9 +36,9 @@ var dice_Iamge = document.querySelector(".dice");
 var btn_roll = document.querySelector(".btn-roll");
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Анхны төрөх буюу бүх зүйл 0 байна
-score_0.textContent=0;
-score_1.textContent=0;
-current_All.textContent=0;
+score_0.innerHTML=0;
+score_1.innerHTML=0;
+current_All.innerHTML=0;
 dice_Iamge.style.display = "none";
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Шоо хаяхад буух зураг
@@ -47,6 +47,9 @@ btn_roll.addEventListener("click", function()
   var dice_Number = Math.floor(Math.random()*6)+1;
   dice_Iamge.style.display = "block";
   dice_Iamge.src="dice-"+dice_Number+".png";
+  // Энэ хэсэгт би нэгдүгээр тоглогчийн одоогийн оноог гаргаж байна дараан ээлж солидог болгон
+  if(dice_Number==1){roundScore =0; current_0.innerHTML =roundScore;}
+  else{roundScore+=dice_Number; current_0.innerHTML=roundScore;}
 })
 
 
