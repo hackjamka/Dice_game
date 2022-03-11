@@ -5,7 +5,7 @@ btn_hold.addEventListener("click", function(){
   playerScore[activePLayer]+=roundScore;
   document.getElementById("score-"+activePLayer).innerHTML=playerScore[activePLayer];
   // Хэн нэгэн яласныг харуулах
-  if(playerScore[activePLayer]>=100){
+  if(playerScore[activePLayer]>= winner_number.value){
     // Хожсон үед гаргах style
     document.querySelector(".player-"+activePLayer+"-panel").classList.add("winner");
     // Хэн хожиж хожигдсоныг харуулах

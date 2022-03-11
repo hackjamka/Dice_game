@@ -24,6 +24,12 @@ body {
     height: 100vh;
     color: #555;
 }
+.winner_text{
+  font-size: 30px;
+}
+.winner_score{
+    text-align: center;
+}
 
 .wrapper {
     width: 1000px;
@@ -60,7 +66,9 @@ body {
     margin-bottom: 10px;
     position: relative;
 }
-
+.btn_winner_score{
+    top: 70px;
+}
 .player-score {
     text-align: center;
     font-size: 80px;

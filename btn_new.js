@@ -10,4 +10,6 @@ btn_new.addEventListener("click",function(){
     gameOver=false
     document.getElementById("name-1").innerHTML = "Player 2";
     document.getElementById("name-0").innerHTML = "Player 1";
+    document.querySelector(".winner_score").style.display="block";
+    winner_number.value=0;
   })

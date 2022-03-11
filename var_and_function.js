@@ -9,6 +9,9 @@ var playerScore = [0,0];
 var roundScore = 0;
 //Тоглоом дуусан эсэх
 var gameOver = false;
+// Хэд хүрвэл хожихыг хэлнэ
+var winner_number = document.getElementById("winner_number");
+console.log(winner_number)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // id="score-0" нь нэгдүгээр тоглогчийн оноо
 
@@ -49,6 +52,9 @@ function activePLayerChanged(){
   document.querySelector(".player-0-panel").classList.toggle("active");
   document.querySelector(".player-1-panel").classList.toggle("active");
 }
-
+function btn_winner_score()
+{
+  document.querySelector(".winner_score").style.display="none";
+}
 
 
